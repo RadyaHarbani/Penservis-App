@@ -5,8 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 const Color primaryColor = Color(0xFF02B561);
 const Color secondaryColor = Color(0xFFFFFFFF);
 const Color blackColor = Color(0xFF141515);
+const Color blackWarmColor = Color(0xFF2B2223);
 const Color backgroundPageColor = Color(0xFFF2FBF8);
 const Color greyColor = Color(0xFFB5BFBE);
+const Color greyLightColor = Color(0xFFF0F0F0);
 const Color starColor = Color(0xFFFFEA2B);
 
 //CATEGORY FILL
