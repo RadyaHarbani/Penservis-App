@@ -18,7 +18,7 @@ class ListUlasanComponent extends GetView<ListPageController> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: controller.width * 0.35,
+      width: controller.width * 0.365,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

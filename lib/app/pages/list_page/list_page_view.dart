@@ -27,7 +27,7 @@ class ListPageView extends GetView<ListPageController> {
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return Container(
-                height: 190,
+                height: 200,
                 margin: EdgeInsets.only(left: controller.width * 0.05, right: controller.width * 0.05, bottom: 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
