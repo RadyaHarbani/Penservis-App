@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:penservis_app/app/pages/home_page/home_page_controller.dart';
+import 'package:penservis_app/app/pages/list_page/list_page_controller.dart';
 import 'package:penservis_app/common/helper/themes.dart';
 
 PreferredSizeWidget? ListAppbarComponent() {
-  final HomePageController controller = Get.put(HomePageController());
+  final ListPageController controller = Get.put(ListPageController());
 
   return AppBar(
     elevation: 0,
@@ -12,14 +13,15 @@ PreferredSizeWidget? ListAppbarComponent() {
     toolbarHeight: 75,
     centerTitle: true,
     title: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SizedBox(width: controller.width * 0.15),
         Image.asset(
-          "assets/icons/png/icElektronik.png",
+          controller.icon.value,
           width: controller.width * 0.1,
         ),
         SizedBox(width: controller.width * 0.04),
-        Text("Elektronik", style: tsBodyLargeSemibold(blackColor)),
+        Text(controller.title.value, style: tsBodyLargeSemibold(blackColor)),
+        SizedBox(width: controller.width * 0.15),
       ],
     ),
     leading: IconButton(
