@@ -7,9 +7,11 @@ class ListKeahlianComponent extends GetView<ListPageController> {
   const ListKeahlianComponent({
     super.key,
     required this.textKeahlian,
+    required this.colorFill
   });
 
   final String textKeahlian;
+  final Color colorFill;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class ListKeahlianComponent extends GetView<ListPageController> {
       padding: EdgeInsets.symmetric(horizontal: controller.width * 0.05, vertical: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: elektronikFill,
+        color: colorFill,
       ),
       child: Text(textKeahlian, style: tsLabelMediumSemibold(secondaryColor)),
     );

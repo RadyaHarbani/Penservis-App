@@ -48,9 +48,9 @@ class ListPageView extends GetView<ListPageController> {
 
                           Row(
                             children: [
-                              ListKeahlianComponent(textKeahlian: "Handphone"),
+                              ListKeahlianComponent(textKeahlian: controller.skillOne.value, colorFill: getSkillColor()),
                               SizedBox(width: controller.width * 0.02),
-                              ListKeahlianComponent(textKeahlian: "Laptop"),
+                              ListKeahlianComponent(textKeahlian: controller.skillTwo.value, colorFill: getSkillColor()),
                             ],
                           ),
 
@@ -75,5 +75,19 @@ class ListPageView extends GetView<ListPageController> {
         )
       )
     );
+  }
+  Color getSkillColor() {
+    switch (controller.title.value) {
+      case 'Elektronik':
+        return elektronikFill;
+      case 'Bangunan':
+        return bangunanFill;
+      case 'Kebersihan':
+        return kebersihanFill;
+      case 'Kendaraan':
+        return kendaraanFill;
+      default:
+        return Colors.black; // Default color
+    }
   }
 }
