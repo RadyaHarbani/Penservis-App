@@ -23,7 +23,7 @@ class HomeKategoriComponent extends GetView<HomePageController> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             GestureDetector(
-              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icElektronik.png", "title": "Elektronik"}),
+              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icElektronik.png", "title": "Elektronik", "skillOne": "Handphone", "skillTwo": "Laptop",  "colorFill": elektronikFill}),
               child: KategoriTukangRectangle(
                 backgroundColor: elektronikOpacity,
                 iconPath: "icElektronik",
@@ -31,7 +31,7 @@ class HomeKategoriComponent extends GetView<HomePageController> {
               ),
             ),
             GestureDetector(
-              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icBangunan.png", "title": "Bangunan"}),
+              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icBangunan.png", "title": "Bangunan", "skillOne": "Akrilik", "skillTwo": "Besi", "colorFill": bangunanFill}),
               child: KategoriTukangRectangle(
                 backgroundColor: bangunanOpacity,
                 iconPath: "icBangunan",
@@ -39,7 +39,7 @@ class HomeKategoriComponent extends GetView<HomePageController> {
               ),
             ),
             GestureDetector(
-              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icKebersihan.png", "title": "Kebersihan"}),
+              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icKebersihan.png", "title": "Kebersihan", "skillOne": "Laundry", "skillTwo": "Pembersih", "colorFill": kebersihanFill}),
               child: KategoriTukangRectangle(
                 backgroundColor: kebersihanOpacity,
                 iconPath: "icKebersihan",
@@ -47,7 +47,7 @@ class HomeKategoriComponent extends GetView<HomePageController> {
               ),
             ),
             GestureDetector(
-              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icKendaraan.png", "title": "Kendaraan"}),
+              onTap: () => Get.toNamed("/list-page", arguments: {"icon": "assets/icons/png/icKendaraan.png", "title": "Kendaraan", "skillOne": "Mobil", "skillTwo": "Motor", "colorFill": kendaraanFill}),
               child: KategoriTukangRectangle(
                 backgroundColor: kendaraanOpacity,
                 iconPath: "icKendaraan",
